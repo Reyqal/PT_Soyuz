@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     background-color: #f0f8ff;
     margin: 20px;
 }
@@ -13,7 +13,6 @@ table {
 }
 
 th, td {
-    text-align: left;
     padding: 10px;
 }
 
@@ -22,23 +21,16 @@ th {
     color: #000;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
-img {
-    border-radius: 8px;
+.nomor{
+    text-align: center;
 }
 
 form {
+    border: 1px solid black;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 500px;
 }
 
@@ -50,12 +42,19 @@ input[type="text"],
 input[type="email"],
 textarea,
 select {
-    width: 100%;
+    font-family: 'Times New Roman', sans-serif;
+    width: 98%;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+input::placeholder,textarea::placeholder{
+    font-family: 'Times New Roman', sans-serif;
+    color:gray;
+    font-weight: bold;
 }
 
 input[type="radio"],
