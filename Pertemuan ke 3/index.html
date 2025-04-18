@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tutorial HTML</h1>
+    
+    <!-- Ba anu teks -->
+    <h2>Pemformatan Teks</h2>
+
+    <!-- Teks Tebal (b/strong) -->
+    <p><b>Teks Tebal</b> menggunakan tag <code>&lt;b&gt;</code> atau <code>&lt;strong&gt;</code>.</p>
+
+    <!-- Teks Miring (i/em) -->
+    <p><i>Teks Miring</i> menggunakan tag <code>&lt;i&gt;</code> atau <code>&lt;em&gt;</code>.</p>
+
+    <!-- Teks Bergaris (u/ins) -->
+    <p><u>Teks Bergaris Bawah</u> menggunakan tag <code>&lt;u&gt;</code> atau <code>&lt;ins&gt;</code>.</p>
+
+    <!-- Teks Tercoret (s/del) -->
+    <p><s>Teks Tercoret</s> menggunakan tag <code>&lt;s&gt;</code> atau <code>&lt;del&gt;</code>.</p>
+
+    <!-- Teks Pangkat atas (sup) -->
+    <p>Pangkat Atas: X<sup>2</sup> menggunakan <code>&lt;sup&gt;</code>.</p>
+
+    <!-- Teks Pangkat Bawah (sub) -->
+    <p>Pangkat Bawah: H<sub>2</sub>O menggunakan <code>&lt;sub&gt;</code>.</p>
+
+    <!-- Marker Teks (mark) -->
+    <p><mark>Marker Teks</mark> menggunakan tag <code>&lt;mark&gt;</code>.</p>
+    
+    <!-- Link -->
+    <h2>Membuat Link</h2>
+    <!-- External link -->
+    <p><a href="https://github.com/Reyqal">Ini adalah contoh link menuju github aing</a></p>
+    <!-- Internal link -->
+    <p><a href="about.html">Ini adalah contoh link menuju about.html</a></p>
+
+    <!-- Gambar -->
+    <h2>Menampilkan Gambar</h2>
+    <figure>
+    <img src="https://pelajarinfo.id/wp-content/uploads/2022/10/Universitas-Tadulako-Logo.png" alt="Contoh Gambar" width="200">
+    <figcaption>Logo untad</figcaption>
+    </figure>
+    
+    <!-- List -->
+    <h2>Membuat List</h2>
+
+    <!-- Oredered list -->
+    <h3>Ordered List</h3>
+    <!-- Atributtenya ada type="a,A,i,dan I" -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    
+    <!-- Unordered List -->
+    <h3>Unordered List</h3>
+    <!-- Atributtenya ada type="square,disc,none,dan circle" -->
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+    
+    <!-- Deskripsi List -->
+     <!-- dl (description list), dt (description term), dd(description description) -->
+    <h3>Decsription List</h3>
+    <dl>
+        <dt>Kata</dt>
+        <dd>Kata adalah sebuah anu apa namanya lupa</dd>
+        <dt>Kalimat</dt>
+        <dd>Kalimat adalah sebuah anu apa namanya lupa</dd>
+    </dl>
+    
+    <!-- Nested List -->
+    <h3>Nested List</h3>
+    <dl>
+        <dt>Pancasila</dt>
+        <dd>
+            Pancasila adalah dasar negara Indonesia, berikut isi pancasila
+            <ol>
+                <li>Ketuhanan yang maha esa</li>
+                <li>Kemanusiaan yang adil dan beradab</li>
+                <li>Persatuan Indonesia</li>
+                <li>Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan </li>
+                <li>Keadilan sosial bagi seluruh rakyat Indonesia </li>
+            </ol>
+        </dd>
+    
+    </dl>
+
+
+
+    <!-- Membuat tabel -->
+    <h2>Membuat Tabel</h2>
+    <h3>Tabel dengan th warna ijo</h3>
+    <table border="1" cellpadding="10">
+        <tr bgcolor="yellow">
+            <th>Nama</th>
+            <th>Umur</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- menggabungkan sel tabel -->
+    <!-- colspan untuk mengabungkan kolom -->
+    <!-- rowspan untuk mengabungkan baris -->
+    <h3>Tabel dengan rowspan dan colspan</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th rowspan="2">Bulan</th>
+            <th colspan="2">Hasil Panen</th>
+        </tr>
+
+        <tr>
+            <td>Jagung</td>
+            <td>Kacang</td>
+        </tr>
+
+        <tr>
+            <td>Januari</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>Februari</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+
+    <!-- Membuat form -->
+    <h2>Membuat Form</h2>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Laki-laki
+        <input type="radio" id="female" name="gender" value="female"> Perempuan<br><br>
+        
+        <label for="hobi">Hobi:</label>
+        <input type="checkbox" name="hobi" value="musik"> Musik
+        <input type="checkbox" name="hobi" value="olahraga"> Olahraga<br><br>
+        
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
