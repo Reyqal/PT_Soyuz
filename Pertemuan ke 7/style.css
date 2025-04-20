@@ -1,0 +1,99 @@
+/* div{
+    border: 10px solid black;
+
+} */
+
+@media only screen and (max-width: 768px) {
+    /* CSS di sini hanya akan diterapkan jika lebar layar ≤ 768px */
+    body {
+      /* background-color: rgb(14, 70, 255); */
+      background-image: url(https://tse3.mm.bing.net/th?id=OIP.7h_4aIR4PFu-xS8wvINbpAHaHa&pid=Api&P=0&h=180);
+    }
+
+  }
+  
+
+nav{
+    position: fixed;
+
+}
+
+.yellow-box{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    background: yellow;
+}
+
+.red-box{
+    position: relative;
+    right: 0;
+    height: 200px;
+    width: 300px;
+    background: red;
+}
+
+.blue-box{
+    position: relative;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    background: blue;
+}
+
+/* Grid HTML */
+
+
+.grid-container-colom{
+    display: grid;
+    /* jumlah auto menentukan banyak colom dan menyesuaikan ukuran colomnya */
+    grid-template-columns: auto 40px 100px auto auto auto auto auto;
+    margin: 20px 50px 0px 0px;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.grid-container-colom>div{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container-row{
+    display: grid;
+    /* jumlah auto menentukan banyak colom dan menyesuaikan ukuran colomnya */
+    grid-template-rows: auto 40px 100px auto auto auto auto auto;
+    margin: 20px 50px 0px 0px;
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.grid-container-row>div{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* flex order */
+.flex-container{
+    display: flex;
+    background-color: rgb(153, 79, 79);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.flexitem{
+    background-color: aqua;
+    text-align: center;
+    order: 2;
+    padding: 20px 0;
+    font-size: 30px;
+    margin: 5px;
+}
